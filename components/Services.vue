@@ -35,12 +35,66 @@
         </div>
       </div>
     </section>
-    <section class="featured-services">
-      <header class="section-header" data-aos="fade-up">
-      <h3>Technology</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </header>
+    <section >
 
+      <div class="container brands"  id="brands">
+
+        <header class="section-header pb-2" data-aos="fade-up">
+          <h3>Technology</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </header>
+
+        <div class="row no-gutters brands-wrap clearfix wow fadeInUp">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="brand-logo" data-aos="zoom-in">
+              <fa :icon="['fab', 'php']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="brand-logo" data-aos="zoom-in" data-aos-delay="100">
+              <fa :icon="['fab', 'laravel']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="brand-logo" data-aos="zoom-in" data-aos-delay="150">
+              <fa :icon="['fab', 'vuejs']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="brand-logo" data-aos="zoom-in" data-aos-delay="200">
+              <fa :icon="['fab', 'node']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="brand-logo" data-aos="zoom-in" data-aos-delay="250">
+              <fa :icon="['fab', 'swift']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="brand-logo" data-aos="zoom-in" data-aos-delay="300">
+              <fa :icon="['fab', 'java']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="brand-logo" data-aos="zoom-in" data-aos-delay="350">
+              <fa :icon="['fab', 'git-alt']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="brand-logo">
+              <fa :icon="['fab', 'aws']"  class="fa-4x brand-color"/>
+            </div>
+          </div>
+        </div>
+      </div>
     <div>
     </div>
     </section>
@@ -111,5 +165,27 @@
 .featured-services .icon-box:hover .icon i {
   color: #fff;
 }
+
+.brands .brands-wrap {
+  border-top: 1px solid #eceff0;
+  border-left: 1px solid #eceff0;
+}
+
+.brands .brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #eceff0;
+  border-bottom: 1px solid #eceff0;
+  overflow: hidden;
+  background: #fff;
+  height: 120px;
+  padding: 40px;
+}
+
+.brands {
+  transition: all 0.4s ease-in-out;
+}
+
 
 </style>
